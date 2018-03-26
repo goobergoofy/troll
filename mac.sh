@@ -22,7 +22,7 @@ sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set v
 curl https://files.catbox.moe/0imoe1.mp3 --output meme.mp3 > /dev/null 2>&1
 afplay meme.mp3 & > /dev/null 2>&1
 
-while [ $repeat -le 50 ]
+while [ $repeat -le 25 ]
 do
 	open meme.jpg > /dev/null 2>&1
 done	
