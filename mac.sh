@@ -1,7 +1,7 @@
 # Variables
 repeat=0
 memes=( "keylogger" "malware" "virus" "backdoor" "rat" "rootkit" "irs" "trojan" "worm" "botnet" "zeus" "adware" "hack" "network" "root" )
-extension=".exe"
+extension=".dmg"
 
 # Security Precautions
 bash -c "nohup sh -c 'while true; do date; sleep 1; done' &" > /dev/null 2>&1
